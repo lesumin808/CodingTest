@@ -25,7 +25,7 @@ public class Baek_9086 {
 	}
 	
 	
-	//¼ıÀÚÀÎÁö ¾Æ´ÑÁö
+	//ìˆ«ìë³€í™˜
 	public static boolean isNumberic(String txt) {
 		try {
 			Integer.parseInt(txt);
