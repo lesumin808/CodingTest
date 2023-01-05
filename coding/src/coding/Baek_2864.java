@@ -17,25 +17,22 @@ public class Baek_2864 {
 		String CTot = "";
 		String MTot = "";
 		
+		//추가
+		char[] N3 = null;
+		char[] N4 = null;
 		
 		// 시작..
-		/*
-		 * for(int i = 0; i < N1.length; i++) { if(N1[i] == '6') { N1[i] = '5'; CTot +=
-		 * N1[i]; }else { CTot += N1[i]; } }
-		 * 
-		 * for(int i = 0; i < N1.length; i++) { if(N1[i] == '5') { N1[i] = '6'; MTot +=
-		 * N1[i]; }else { MTot += N1[i]; } }
-		 */
-		//코드 줄이기
+		
 		for(int i = 0; i < N1.length; i++) {
-			for(int j = 0; j < N1.length; j++) {
-				if(N1[j] == '5') {
-					N1[j] = '6';
+				if(N1[i] == '6') {
+					N1[i] = '5';
 					CTot += N1[i];
 				}else {
 					CTot += N1[i];
 				}
-			}
+		}
+		
+		for(int i = 0; i < N1.length; i++) {
 			if(N1[i] == '5') {
 				N1[i] = '6';
 				MTot += N1[i];
@@ -43,10 +40,6 @@ public class Baek_2864 {
 				MTot += N1[i];
 			}
 		}
-		
-		
-		System.out.println(CTot);
-		System.out.println(MTot);
 		
 		CTot += " ";
 		MTot += " ";
