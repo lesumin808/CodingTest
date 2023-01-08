@@ -19,6 +19,7 @@ public class Baek_2902 {
 			
 			if(txt[i].charAt(0) != '-') {
 				sb.append(txt[i].charAt(0));
+				//txt[i].charAt(0) - 0 -> int로 형변환
 			}
 		}
 
