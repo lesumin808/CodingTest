@@ -29,7 +29,7 @@ public class Baek_14726 {
 		for(int i = cardNum.length() - 1; i >= 0; i--) {
 			int cardnum = (cardNum.charAt(i) - '0');
 			if(i % 2 == 0) {
-				if(cardnum > 5) {
+				if(cardnum >= 5) {
 					int a = (cardnum * 2);
 					total += (a - 10) + 1; 
 				}else {
