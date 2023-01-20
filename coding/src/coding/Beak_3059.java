@@ -28,25 +28,19 @@ public class Beak_3059 {
 				'R','S','T','U','V','W','X','Y','Z'};		
 		
 		String number = "";
-		int total = 0;		
-		char same;;
+		int total = 0;
 		
-		for(int j = 0; j < str.length(); j++) {
-			for(int k = 0; k < c.length; k++) {
-				if(str.charAt(j) == c[k]) {
-					same = str.charAt(j);
+		for(int j = 0; j < c.length; j++) {
+			boolean confirm = false;
+			for(int i = 0; i < str.length(); i++) {
+				if(c[j] == str.charAt(i)) {
+					confirm = true;
 					break;
-					
 				}
-				
-				//값이 같으면 빠져나오면 반복으로 찍히니까 ... 같
 			}
 			
-			
-			
+			if(confirm == false) number += c[j];
 		}
-		
-		System.out.println("number = " + number);
 		
 		for(int p = 0; p < number.length(); p++) {
 			total += number.charAt(p);
