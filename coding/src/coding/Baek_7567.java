@@ -26,6 +26,7 @@ public class Baek_7567 {
 		height += 10;
 		
 		System.out.println(height);
+		
 
 	}
 

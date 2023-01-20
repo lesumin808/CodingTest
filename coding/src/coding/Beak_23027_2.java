@@ -22,7 +22,7 @@ public class Beak_23027_2 {
 				break;
 			} else if (c[i] == 'B') {
 				exB = true;
-			} else if (c[i] == 'c') {
+			} else if (c[i] == 'C') {
 				exC = true;
 			}
 		}

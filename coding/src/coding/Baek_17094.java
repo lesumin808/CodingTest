@@ -13,7 +13,7 @@ public class Baek_17094 {
 		
 		int num = Integer.parseInt(br.readLine());
 		
-		String txt = br.readLine().substring(0,num);
+		String txt = br.readLine();
 		
 		String txt2 = txt.replaceAll("e", "");
 		String txtE = txt.replaceAll("2", "");
